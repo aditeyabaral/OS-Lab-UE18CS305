@@ -8,6 +8,5 @@ Client.o: Client.c Header.h
 	gcc -c Client.c
 
 clean:
-	rm -rf *.o
-	rm -rf *.out
-	rm -rf reverse
+		rm -rf *.o
+		rm -rf *.out

@@ -11,10 +11,10 @@ int main()
     for(int i = 0; i<n; i++)
         scanf("%d", &a[i]);
 
-    printf("Input Array:\n");
+    printf("\nInput Array:\n");
     display_array(a, n);
 
-    printf("Reversed Array:\n");
+    printf("\nReversed Array:\n");
     reverse_array(a, n);
 
     free(a);
