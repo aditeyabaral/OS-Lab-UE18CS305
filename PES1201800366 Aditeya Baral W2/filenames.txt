@@ -1,0 +1,10 @@
+exercise_1.sh
+exercise_3.sh
+filenames.txt
+first.sh
+fourth.sh
+second.sh
+sorted_filenames.txt
+third.sh
+WEEK 2 - OS LAB manual for Shell Scripting.docx
+Monday 07 September 2020 08:35:33 PM IST
