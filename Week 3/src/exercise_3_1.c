@@ -28,6 +28,9 @@ int main()
 
 void childProcess(char *name)
 {
+    char buffer[100];
+    printf("Welcome to the Child Process!\n");
+    write(1, buffer, strlen(buffer));
     char *args[] = {name, NULL};
     execv("./greeting", args);
 }
@@ -35,6 +38,10 @@ void childProcess(char *name)
 void parentProcess(char *name)
 {
     char buffer[100];
-    printf("Goodbye, %s\n", name);
+    printf("This is a Parent Process!\n");
+    write(1, buffer, strlen(buffer));
+    printf("Goodbye, %s!\n", name);
+    write(1, buffer, strlen(buffer));
+    printf("Leaving Parent Process...\n");
     write(1, buffer, strlen(buffer));
 }

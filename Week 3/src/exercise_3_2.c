@@ -2,6 +2,7 @@
 
 int main(int argc, char *argv[])
 {
-    printf("Welcome, %s\n", argv[0]);
+    printf("Hello, %s!\n", argv[0]);
+    printf("Leaving Child Process...\n\n");
     return 0;
 }
