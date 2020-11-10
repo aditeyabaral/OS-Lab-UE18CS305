@@ -1,11 +1,11 @@
-reverse.out: Server.o Client.o
-	gcc Server.o Client.o -o reverse.out
+reverse.out: server.o client.o
+	gcc server.o client.o -o reverse.out
 
-Server.o: Server.c Header.h
-	gcc -c Server.c
+server.o: server.c header.h
+	gcc -c server.c
 
-Client.o: Client.c Header.h
-	gcc -c Client.c
+client.o: client.c header.h
+	gcc -c client.c
 
 clean:
 	rm -rf *.o

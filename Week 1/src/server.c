@@ -1,4 +1,4 @@
-#include "Header.h"
+#include "header.h"
 void reverse_array(int *a, int n)
 {
     int temp, start = 0, end = n - 1;
