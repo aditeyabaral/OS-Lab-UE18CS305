@@ -5,10 +5,10 @@ int main()
     printf("Enter size of Array: ");
     scanf("%d", &n);
 
-    int *a = (int*)calloc(n, sizeof(int));
+    int *a = (int *)calloc(n, sizeof(int));
 
     printf("Enter elements: ");
-    for(int i = 0; i<n; i++)
+    for (int i = 0; i < n; i++)
         scanf("%d", &a[i]);
 
     printf("\nInput Array:\n");

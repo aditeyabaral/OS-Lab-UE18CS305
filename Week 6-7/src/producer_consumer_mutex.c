@@ -31,7 +31,7 @@ int main()
 void *producer()
 {
     int item = 0;
-    while(true)
+    while (true)
     {
         pthread_mutex_lock(&empty);
         pthread_mutex_lock(&mutex);
@@ -46,7 +46,7 @@ void *producer()
 
 void *consumer()
 {
-    while(true)
+    while (true)
     {
         pthread_mutex_lock(&full);
         pthread_mutex_lock(&mutex);

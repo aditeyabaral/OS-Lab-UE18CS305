@@ -41,8 +41,7 @@ float getSeekTime(int initial_position, int q_size, int *q_positions)
             "Disk head moves from %d to %d with seek = %d\n",
             initial_position,
             q_positions[i],
-            abs(initial_position - q_positions[i])
-            );
+            abs(initial_position - q_positions[i]));
 
         seek += abs(initial_position - q_positions[i]);
         initial_position = q_positions[i];
